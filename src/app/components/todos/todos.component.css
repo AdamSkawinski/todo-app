@@ -1,0 +1,110 @@
+html{
+	min-height: 100%;
+}
+
+.form{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #9ba497;
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color:#829487;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+
+
+
+/************* Buttons 	*************/
+
+
+.todo-input {
+	display: block;
+	width: 85%;
+	margin-right: auto;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #ffe8cd;
+	font-size: 20px;
+	outline: none;
+	text-align: left;
+}
+.todo-submit {
+	display: block;
+	width: 5%;
+	min-width: 20px;
+	border-radius: 20%;
+
+	appearance: none;
+	border: #ffe8cd;
+	outline: none;
+	background: none;
+
+	background-color: #ffb46e;
+	color: #FFF;
+	margin: 15px auto;
+
+	
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.todo-settings{
+	display: block;
+	width: 5%;
+	min-width: 20px;
+	border-radius: 20%;
+
+	appearance: none;
+	border: #ffe8cd;
+	outline: none;
+	background: none;
+
+	background-color: #ffb46e;
+	color: #FFF;
+	margin: 15px auto;
+
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.delete{
+	background-color: #ffe8cd;
+	border-radius: 20%;
+
+	outline: none;
+	
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50px;
+
+
+
+
+}
